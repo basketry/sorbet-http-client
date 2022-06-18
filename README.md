@@ -1,7 +1,7 @@
 [![main](https://github.com/basketry/sorbet-http-client/workflows/build/badge.svg?branch=main&event=push)](https://github.com/basketry/sorbet-http-client/actions?query=workflow%3Abuild+branch%3Amain+event%3Apush)
 [![master](https://img.shields.io/npm/v/@basketry/sorbet-http-client)](https://www.npmjs.com/package/@basketry/sorbet-http-client)
 
-# Rails
+# Ruby/Sorbey HTTP Client
 
 [Basketry generator](https://github.com/basketry) generator for generating HTTP clients implemented in Ruby/Sorbet. This generator can be coupled with any Basketry pipeline. It is recommended to use this generator alongside the [`@basketry/sorbet`](https://github.com/basketry/sorbet) generator.
 
