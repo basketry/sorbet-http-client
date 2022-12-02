@@ -24,7 +24,8 @@ Example config without options:
   "source": "petstore.json",
   "parser": "@basketry/swagger-2",
   "generators": ["@basketry/sorbet", "@basketry/sorbet-http-client"],
-  "output": ""
+  "output": "",
+  "options": { "basketry": { "subfolder": "app/lib" } }
 }
 ```
 
@@ -58,24 +59,8 @@ Example config:
   "generators": ["@basketry/sorbet", "@basketry/sorbet-validators"],
   "output": "",
   "options": {
-    "sorbet": {
-      "lib": "app/lib"
-    }
-  }
-}
-```
-
-### `lib`
-
-This setting lets you specify where the client files will be written within a rails application. If not specified, the default is `app/lib`.
-
-Example usage:
-
-```json
-{
-  "options": {
-    "sorbet": {
-      "lib": "app/services"
+    "basketry": {
+      "subfolder": "app/lib"
     }
   }
 }
