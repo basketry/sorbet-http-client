@@ -5,13 +5,6 @@ import { buildNamespace } from '@basketry/sorbet/lib/name-factory';
 import { SorbetHttpClientOptions } from './types';
 import { sep } from 'path';
 
-function libFolder(options?: SorbetHttpClientOptions): string[] {
-  if (!options?.sorbet?.lib) return ['app', 'lib'];
-  return options.sorbet.lib
-    .split(sep)
-    .filter((x) => !!x && x !== '.' && x !== '..');
-}
-
 export function buildClientName(int: Interface): string {
   return pascal(`${int.name}_http_client`);
 }
@@ -29,7 +22,6 @@ export function buildClientFilepath(
   const namespace = buildClientNamespace(service, options);
 
   return [
-    ...libFolder(options),
     ...namespace.split('::').map(snake),
     `${snake(buildClientName(int))}.rb`,
   ];
@@ -51,7 +43,6 @@ export function buildMapperFilepath(
   const namespace = buildMapperNamespace(service, options);
 
   return [
-    ...libFolder(options),
     ...namespace.split('::').map(snake),
     `${snake(buildMapperName())}.rb`,
   ];

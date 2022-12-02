@@ -1,5 +1,5 @@
-app/lib/basketry_example/v1/gizmo_http_client.rb linguist-generated=true
-app/lib/basketry_example/v1/widget_http_client.rb linguist-generated=true
-app/lib/basketry_example/v1/exhaustive_http_client.rb linguist-generated=true
-app/lib/basketry_example/v1/auth_permutation_http_client.rb linguist-generated=true
-app/lib/basketry_example/v1/http_client_helpers.rb linguist-generated=true
+basketry_example/v1/gizmo_http_client.rb linguist-generated=true
+basketry_example/v1/widget_http_client.rb linguist-generated=true
+basketry_example/v1/exhaustive_http_client.rb linguist-generated=true
+basketry_example/v1/auth_permutation_http_client.rb linguist-generated=true
+basketry_example/v1/http_client_helpers.rb linguist-generated=true
