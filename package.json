@@ -1,6 +1,6 @@
 {
   "name": "@basketry/sorbet-http-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Basketry generator for generating HTTP clients implemented in Ruby/Sorbet",
   "main": "./lib/index.js",
   "scripts": {
